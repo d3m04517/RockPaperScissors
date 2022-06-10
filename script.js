@@ -21,6 +21,8 @@ function playRound() {
 
     } else if ((computerChoice == "scissors" && playerChoice == "rock") || (computerChoice == "rock" && playerChoice == "paper") || (computerChoice == "paper" && playerChoice == "scissors") ) {
         container.insertAdjacentHTML('beforeend', "<p>You won! Computer selected " + computerChoice + " and you selected " + playerChoice + "</p>");
+    } else {
+        container.insertAdjacentHTML('beforeend', "<p>Please select one of the options." + "</p>");
     }
 }
 
