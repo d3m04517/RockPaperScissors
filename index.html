@@ -2,18 +2,25 @@
 <html>
 
 <head>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Rock Paper Scissors</title>
 </head>
 
 <body>
-    <div class="header">
+    <div id="container">
         <h1>Welcome to Rock Paper Scissors!</h1>
         <p>Click the button below to play!</p>
-    </div>
-    <div id="gameContainer">
-        <input type="button" onclick="game()" value="Play Game">
+        <input id="startButton" type="button" value="Start Game">
+
+        <div id="selections">
+            <p class="scoreCount"></p>
+            <input class="rock" type="button" value="Rock">
+            <input class="paper" type="button" value="Paper">
+            <input class="scissors" type="button" value="Scissors">
+            <p class="roundResult"></p>
+        </div>
     </div>
 </body>
 </html>
